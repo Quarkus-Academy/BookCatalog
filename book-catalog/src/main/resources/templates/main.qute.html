@@ -1,0 +1,48 @@
+{@java.util.List<com.ibm.quarkusacademy.book.model.Book> bookList}
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+  <title>Book Catalog</title>
+</head>
+
+<body onload="onLoad()">
+  <header class="p-8 text-4xl">
+    <h2>Book Catalog</h2>
+  </header>
+  <main class="p-8 flex justify-center">
+    {#if bookList != null && !bookList.isEmpty}
+    <table class="bg-white">
+      <thead>
+        <tr>
+          <th class="p-2 border border-slate-300">Title</th>
+          <th class="p-2 border border-slate-300">Author</th>
+          <th class="p-2 border border-slate-300">Year</th>
+          <th class="p-2 border border-slate-300">Hard cover</th>
+          <th class="p-2 border border-slate-300">Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+      {#for book in bookList}
+      {#include book book=book /}
+      {/for}
+      </tbody>
+    </table>
+    {#else}
+      <span class="px-16 py-8 bg-white rounded">No books</span>
+    {/if}
+  </main>
+
+  <script type="text/javascript" src="/assets/scripts/common.js"></script>
+  <script>
+    // Scripts with Qute
+  </script>
+</body>
+
+</html>
