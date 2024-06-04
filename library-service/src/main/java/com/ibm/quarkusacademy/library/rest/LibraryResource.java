@@ -50,6 +50,8 @@ public class LibraryResource {
    */
   @GET
   public Response ping() {
+    Log.info("LibraryService was pinged");
+
     return Response.ok("pong").build();
   }
 
