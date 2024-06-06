@@ -24,16 +24,6 @@ or
 
 ## Useful links
 
-### Qute templating engine and CORS
-
-[Qute basics](https://quarkus.io/guides/qute)
-
-[Qute reference guide](https://quarkus.io/guides/qute-reference)
-
-[CORS in Quarkus](https://quarkus.io/guides/security-cors)
-
-[More about CORS (also source of CORS image)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-
 ### Mocking Frameworks
 
 [QuarkusMock & QuarkusSpy](https://quarkus.io/guides/getting-started-testing#quarkus_mock)
@@ -45,3 +35,13 @@ or
 ### Health Checks
 
 [SmallRye (MicroProfile) Health](https://quarkus.io/guides/smallrye-health)
+
+### Qute templating engine and CORS
+
+[Qute basics](https://quarkus.io/guides/qute)
+
+[Qute reference guide](https://quarkus.io/guides/qute-reference)
+
+[CORS in Quarkus](https://quarkus.io/guides/security-cors)
+
+[More about CORS (also source of CORS image)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
